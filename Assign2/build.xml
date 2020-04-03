@@ -33,7 +33,7 @@
 
    <target name="targets">
       <echo message="targets are clean, prepare, setup.javafx, compile, and sample. "/>
-      <echo message="to run enter: ant sample -DuserId=${userId} -Domdbkey=${omdbkey}"/>
+      <echo message="to run enter: ant execute -DuserId=${userId} -Domdbkey=${omdbkey}"/>
    </target>
 
    <target name="prepare">
@@ -101,8 +101,8 @@
       </javac>
    </target>
 
-   <target name="target" depends="compile"
-           description="execute the sample mail client">
+   <target name="execute" depends="compile"
+           description="execute the assignment client">
       <java classname="ser321.assign2.lindquis.MediaLibraryApp"
             fork="yes">
          <arg value="${userId}"/> 
