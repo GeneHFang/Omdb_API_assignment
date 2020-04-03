@@ -101,7 +101,7 @@
       </javac>
    </target>
 
-   <target name="sample" depends="compile"
+   <target name="target" depends="compile"
            description="execute the sample mail client">
       <java classname="ser321.assign2.lindquis.MediaLibraryApp"
             fork="yes">
